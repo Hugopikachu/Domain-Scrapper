@@ -82,8 +82,7 @@ def update_queue(new_urls, queue, explored_urls):
     """
     update the queue of remaining urls with the new urls that are not already explored
     """
-    resolved_urls = set([remove_query(url) for url in new_urls]) # resolve the url and remove query string before updating 
-    unexplored_urls = resolved_urls.difference(explored_urls)
+    unexplored_urls = set(new_urls).difference(explored_urls)
     queue.update(unexplored_urls)
 
 def filepath_from_url(url):
