@@ -11,10 +11,10 @@ def main() :
         usage="domainScrapper.py OPTIONS domain"
         )
     parser.set_defaults(save_files=False, subdomains=False, max_iter=2000, verbose=False)
-    parser.add_option("-f", action="store_true", help="save html files into a subfolder of the current working directory", dest="save_files")
-    parser.add_option("-s", action="store_true", help="saves the enountered subdomains in a txt file", dest="subdomains")
-    parser.add_option("-m", help="set the maximum number of urls explored", metavar="MAX_ITER", dest="max_iter", type="int")
-    parser.add_option("-v", action="store_true", help="print status messages to stdout", dest="verbose")
+    parser.add_option("-f", "--save-files", action="store_true", help="save html files into a subfolder of the current working directory", dest="save_files")
+    parser.add_option("-s", "--subdomains", action="store_true", help="saves the encountered subdomains in a subdomains.txt file", dest="subdomains")
+    parser.add_option("-m", "--max-iter", help="set the maximum number of urls explored", metavar="MAX_ITER", dest="max_iter", type="int")
+    parser.add_option("-v", "--verbose", action="store_true", help="print status messages to stdout", dest="verbose")
     
     opts, args = parser.parse_args()
 
