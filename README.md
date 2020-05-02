@@ -22,18 +22,18 @@ domainScrapper.py OPTIONS domain
 
 ### Options
 
-	-h, --help   show this help message and exit
-	-f           save html files into a subfolder of the current working directory
-	-s           saves the encountered subdomains in a txt file
-	-m MAX_ITER  set the maximum number of urls explored
-	-v           print status messages to stdout
+	-h, --help            			show this help message and exit
+  	-f, --save-files      			save html files into a subfolder of the current working directory
+  	-s, --subdomains      			saves the encountered subdomains in a subdomains.txt file
+  	-m MAX_ITER, --max-iter=MAX_ITER 	set the maximum number of urls explored
+  	-v, --verbose         			print status messages to stdout
 
 
 ## Possible enhancements
 
 * specify output destination instead of using current working directory
 * build a sitemap.xml file instead of simply saving every urls encountered
-* take into account other resources (.css, .js, .txt, .xml, img?, pdf?) instead of only source code
+* take into account other resources (.css, .js, .txt, .xml, images, ...) instead of only source code
 * and many other 
 	
 Feel free to suggest modifications and reuse this code as you want ;)
