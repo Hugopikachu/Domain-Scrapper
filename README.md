@@ -9,10 +9,10 @@ Add every link inside the domain to a queue of urls to be processed and move pro
 Repeat the process until the queue of internal urls is consumed or the maximal number of iterations is reached.
 
 ### Inputs
-	- a domain name
+A domain name in a 'domain-name.extension' pattern
 	
 ### Outputs
-	- a domain.txt file with every internal urls encountered
+a domain.txt file with every internal urls encountered
 
 ## How to use it
 Simply clone the repository or download the domainScrapper.py file and run it from the directory you want to save your results.
@@ -31,10 +31,10 @@ domainScrapper.py OPTIONS domain
 
 ## Possible enhancements
 
-	- specify output destination instead of using current working directory
-	- build a sitemap.xml file instead of simply saving every urls encountered
-	- take into account other resources (.css, .js, .txt, .xml, img?, pdf?) instead of only source code
-	- and many other 
+* specify output destination instead of using current working directory
+* build a sitemap.xml file instead of simply saving every urls encountered
+* take into account other resources (.css, .js, .txt, .xml, img?, pdf?) instead of only source code
+* and many other 
 	
 Feel free to suggest modifications and reuse this code as you want ;)
 
