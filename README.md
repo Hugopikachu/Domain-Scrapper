@@ -1,4 +1,4 @@
-# domain-scrapper
+# Domain Scrapper
 A simple domain scrapper in Python.
 
 ## Working principle
